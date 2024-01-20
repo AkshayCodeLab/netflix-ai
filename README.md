@@ -13,6 +13,11 @@
 - Create signup user account
 - Configuring redux to store the user login info
 - Dispatching apt actions to update the redux store.
+- Update Profile
+- BugFix -> Sign up user displayName and profile picture
+- BugFix -> If the user is not logged in Redirect /browse to the Login Page and vice-versa.
+- Good Practice -> Unsubscribe to the onOauthStateChanged every time our component unmounts.
+- Store all the strings in the form of constants.
 
 # Features
 
