@@ -38,13 +38,27 @@ const Header = () => {
   };
 
   return (
-    <div className="flex justify-between absolute z-10 w-screen bg-gradient-to-b from-black">
+    <div className="flex justify-between items-center absolute z-10 w-screen bg-gradient-to-b from-black">
       <img className="w-52 px-8 py-2" src={LOGO} alt="logo" />
+
       {user && (
-        <div className="flex gap-2 m-4">
-          <img className="w-7" src={USER_ICON} alt="user-icon" />
-          <button className="text-white" onClick={handleSignOut}>
-            (Sign Out)
+        <div className="flex items-center gap-4 m-4 mr-8">
+          <button className="text-white bg-blue-600 p-2 m-2 rounded-md hover:opacity-75">
+            GPT Search
+          </button>
+          <div className="relative">
+            <img
+              className="w-10 h-10 rounded-sm object-cover"
+              src={USER_ICON}
+              alt="user-icon"
+            />
+          </div>
+
+          <button
+            className="text-white hover:text-gray-300 text-lg"
+            onClick={handleSignOut}
+          >
+            Sign Out
           </button>
         </div>
       )}
